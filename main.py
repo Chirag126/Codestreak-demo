@@ -18,3 +18,9 @@ def area(length, width):
     return length * width
 print("Area:", area(x, y))
 print("Average:", sum(numbers) / len(numbers))
+
+nums, target = [2, 7, 11, 15], 9
+seen = {}
+for i, n in enumerate(nums):
+    if target - n in seen: print([seen[target - n], i])
+    seen[n] = i
