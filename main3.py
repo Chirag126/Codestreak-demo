@@ -8,3 +8,5 @@ while True:
     if guess == secret:
         print(f"Correct! You got it in {tries} tries."); break
     print("Too high!" if guess > secret else "Too low!")
+
+    
